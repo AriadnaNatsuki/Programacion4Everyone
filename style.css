@@ -11,17 +11,19 @@
 }
 
 
+/* ==========================================
+   GENERAL
+   ========================================== */
+
 *{
     box-sizing:border-box;
     margin:0;
     padding:0;
 }
 
-
 html{
     scroll-behavior:smooth;
 }
-
 
 html,
 body{
@@ -31,14 +33,12 @@ body{
     overflow-x:hidden;
 }
 
-
 h1,
 h2,
 h3,
 .logo-text{
     font-family:'Baloo 2', sans-serif;
 }
-
 
 a{
     text-decoration:none;
@@ -47,7 +47,7 @@ a{
 
 
 /* ==========================================
-   FONDO
+   FONDO DECORATIVO
    ========================================== */
 
 .bg-shapes{
@@ -58,62 +58,71 @@ a{
     overflow:hidden;
 }
 
-
 .bg-shapes span{
     position:absolute;
+
     opacity:0.16;
+
     font-size:52px;
+
     animation:float 9s ease-in-out infinite;
+
     filter:drop-shadow(
         0 4px 0 rgba(0,0,0,0.03)
     );
 }
 
-
 .bg-shapes span:nth-child(1){
     top:8%;
     left:4%;
+
     animation-delay:0s;
+
     font-size:60px;
 }
-
 
 .bg-shapes span:nth-child(2){
     top:22%;
     left:88%;
+
     animation-delay:1.2s;
+
     font-size:44px;
 }
-
 
 .bg-shapes span:nth-child(3){
     top:62%;
     left:6%;
+
     animation-delay:2.1s;
+
     font-size:50px;
 }
-
 
 .bg-shapes span:nth-child(4){
     top:78%;
     left:82%;
+
     animation-delay:0.6s;
+
     font-size:66px;
 }
-
 
 .bg-shapes span:nth-child(5){
     top:45%;
     left:92%;
+
     animation-delay:3s;
+
     font-size:36px;
 }
-
 
 .bg-shapes span:nth-child(6){
     top:5%;
     left:48%;
+
     animation-delay:1.8s;
+
     font-size:38px;
 }
 
@@ -140,12 +149,11 @@ a{
     .bg-shapes span{
         animation:none;
     }
-
 }
 
 
 /* ==========================================
-   HEADER
+   HEADER / NAVEGACIÓN
    ========================================== */
 
 header{
@@ -153,6 +161,7 @@ header{
     z-index:2;
 
     display:flex;
+
     align-items:center;
     justify-content:space-between;
 
@@ -162,7 +171,9 @@ header{
 
 .logo{
     display:flex;
+
     align-items:center;
+
     gap:10px;
 }
 
@@ -176,6 +187,7 @@ header{
     border-radius:14px;
 
     display:flex;
+
     align-items:center;
     justify-content:center;
 
@@ -192,6 +204,7 @@ header{
 
 .logo-text{
     font-size:1.35rem;
+
     font-weight:800;
 
     color:var(--blue-deep);
@@ -207,6 +220,7 @@ header{
 
 nav ul{
     display:flex;
+
     gap:34px;
 
     list-style:none;
@@ -219,6 +233,7 @@ nav ul{
 
 nav ul li a{
     position:relative;
+
     padding-bottom:4px;
 }
 
@@ -247,21 +262,13 @@ nav ul li a:hover::after{
 }
 
 
-@media (max-width:760px){
-
-    nav ul{
-        display:none;
-    }
-
-}
-
-
 /* ==========================================
    HERO
    ========================================== */
 
 .hero{
     position:relative;
+
     z-index:2;
 
     text-align:center;
@@ -272,7 +279,9 @@ nav ul li a:hover::after{
 
 .eyebrow{
     display:inline-flex;
+
     align-items:center;
+
     gap:8px;
 
     background:var(--white);
@@ -294,11 +303,12 @@ nav ul li a:hover::after{
 
 
 .hero h1{
-    font-size:clamp(
-        2.2rem,
-        5vw,
-        3.6rem
-    );
+    font-size:
+        clamp(
+            2.2rem,
+            5vw,
+            3.6rem
+        );
 
     color:var(--blue-deep);
 
@@ -348,6 +358,10 @@ nav ul li a:hover::after{
     color:#39507f;
 }
 
+
+/* ==========================================
+   BOTONES HERO
+   ========================================== */
 
 .hero-ctas{
     display:flex;
@@ -432,11 +446,12 @@ nav ul li a:hover::after{
 
 
 /* ==========================================
-   CUADRÍCULA 2 x 2
+   CUADRÍCULA PRINCIPAL 2 × 2
    ========================================== */
 
 .main-grid{
     position:relative;
+
     z-index:2;
 
     max-width:1080px;
@@ -480,7 +495,6 @@ nav ul li a:hover::after{
 
 
 .course-card:hover{
-
     transform:translateY(-6px);
 
     box-shadow:
@@ -490,7 +504,6 @@ nav ul li a:hover::after{
 
 
 .course-card .glow{
-
     position:absolute;
 
     top:-60px;
@@ -508,7 +521,6 @@ nav ul li a:hover::after{
 
 
 .card-blue .glow{
-
     background:
         radial-gradient(
             circle,
@@ -519,7 +531,6 @@ nav ul li a:hover::after{
 
 
 .card-yellow .glow{
-
     background:
         radial-gradient(
             circle,
@@ -530,13 +541,13 @@ nav ul li a:hover::after{
 
 
 .course-icon{
-
     width:64px;
     height:64px;
 
     border-radius:18px;
 
     display:flex;
+
     align-items:center;
     justify-content:center;
 
@@ -545,12 +556,12 @@ nav ul li a:hover::after{
     margin-bottom:18px;
 
     position:relative;
+
     z-index:1;
 }
 
 
 .card-blue .course-icon{
-
     background:var(--blue-deep);
 
     color:var(--yellow);
@@ -558,15 +569,17 @@ nav ul li a:hover::after{
 
 
 .card-yellow .course-icon{
-
     background:var(--yellow);
 
     color:var(--blue-deep);
 }
 
 
-.badge-new{
+/* ==========================================
+   BADGES
+   ========================================== */
 
+.badge-new{
     position:absolute;
 
     top:24px;
@@ -594,7 +607,8 @@ nav ul li a:hover::after{
 
     z-index:1;
 
-    animation:pulse 2.4s ease-in-out infinite;
+    animation:
+        pulse 2.4s ease-in-out infinite;
 }
 
 
@@ -621,12 +635,14 @@ nav ul li a:hover::after{
     .badge-new{
         animation:none;
     }
-
 }
 
 
-.course-card h3{
+/* ==========================================
+   TEXTO CURSOS
+   ========================================== */
 
+.course-card h3{
     font-size:1.4rem;
 
     color:var(--blue-deep);
@@ -634,12 +650,12 @@ nav ul li a:hover::after{
     margin-bottom:10px;
 
     position:relative;
+
     z-index:1;
 }
 
 
 .course-card p{
-
     color:#4a5f8a;
 
     font-weight:600;
@@ -649,12 +665,16 @@ nav ul li a:hover::after{
     margin-bottom:20px;
 
     position:relative;
+
     z-index:1;
 }
 
 
-.tag-row{
+/* ==========================================
+   ETIQUETAS CURSOS
+   ========================================== */
 
+.tag-row{
     display:flex;
 
     gap:8px;
@@ -664,12 +684,12 @@ nav ul li a:hover::after{
     margin-bottom:22px;
 
     position:relative;
+
     z-index:1;
 }
 
 
 .tag{
-
     font-size:0.78rem;
 
     font-weight:700;
@@ -681,7 +701,6 @@ nav ul li a:hover::after{
 
 
 .card-blue .tag{
-
     background:var(--blue-sky);
 
     color:var(--blue-deep);
@@ -689,15 +708,17 @@ nav ul li a:hover::after{
 
 
 .card-yellow .tag{
-
     background:var(--yellow-soft);
 
     color:#7a5a00;
 }
 
 
-.card-link{
+/* ==========================================
+   ENLACES CURSOS
+   ========================================== */
 
+.card-link{
     display:inline-flex;
 
     align-items:center;
@@ -709,6 +730,7 @@ nav ul li a:hover::after{
     font-family:'Baloo 2', sans-serif;
 
     position:relative;
+
     z-index:1;
 }
 
@@ -724,7 +746,6 @@ nav ul li a:hover::after{
 
 
 .card-link .arrow{
-
     transition:
         transform .2s ease;
 }
@@ -732,58 +753,57 @@ nav ul li a:hover::after{
 
 .course-card:hover
 .card-link .arrow{
-
     transform:
         translateX(5px);
 }
 
 
 /* ==========================================
-   CAJAS GENERALES
+   OPINIONES Y CONTACTO
+   ESTILO DIFERENTE A LOS CURSOS
    ========================================== */
 
 .grid-box{
+    background:
+        rgba(255,255,255,0.75);
 
-    background:var(--white);
+    border:
+        2px solid rgba(18,60,140,0.10);
 
-    border-radius:26px;
+    border-radius:18px;
 
-    padding:30px;
+    padding:28px;
 
-    box-shadow:
-        0 10px 0 rgba(18,60,140,0.08),
-        0 14px 30px rgba(18,60,140,0.10);
+    box-shadow:none;
+
+    backdrop-filter:blur(4px);
 }
 
 
+/* ==========================================
+   CABECERA DE OPINIONES / CONTACTO
+   ========================================== */
+
 .section-head{
+    text-align:left;
 
-    text-align:center;
-
-    margin-bottom:25px;
+    margin-bottom:22px;
 }
 
 
 .section-head h2{
-
-    font-size:
-        clamp(
-            1.5rem,
-            3vw,
-            2rem
-        );
+    font-size:1.55rem;
 
     color:var(--blue-deep);
 }
 
 
 .section-head p{
-
     color:#39507f;
 
     font-weight:600;
 
-    margin-top:8px;
+    margin-top:6px;
 }
 
 
@@ -791,11 +811,27 @@ nav ul li a:hover::after{
    OPINIONES
    ========================================== */
 
-#my_tutor_reviews_widget{
+#opiniones{
+    background:#f8fbff;
+}
 
+
+#my_tutor_reviews_widget{
     width:100%;
 
     min-height:120px;
+}
+
+
+/* ==========================================
+   CONTACTO
+   ========================================== */
+
+#contacto{
+    background:#fffdf5;
+
+    border-color:
+        rgba(255,210,63,0.45);
 }
 
 
@@ -804,27 +840,24 @@ nav ul li a:hover::after{
    ========================================== */
 
 .contact-form{
-
     display:flex;
 
     flex-direction:column;
 
-    gap:15px;
+    gap:13px;
 }
 
 
 .form-group{
-
     display:flex;
 
     flex-direction:column;
 
-    gap:7px;
+    gap:6px;
 }
 
 
 .form-group label{
-
     font-weight:800;
 
     color:var(--blue-deep);
@@ -833,15 +866,14 @@ nav ul li a:hover::after{
 
 .form-group input,
 .form-group textarea{
-
     width:100%;
 
     border:
         2px solid #dce6f8;
 
-    border-radius:14px;
+    border-radius:11px;
 
-    padding:12px 14px;
+    padding:10px 13px;
 
     font-family:'Nunito', sans-serif;
 
@@ -849,7 +881,7 @@ nav ul li a:hover::after{
 
     color:var(--ink);
 
-    background:#fbfdff;
+    background:white;
 
     outline:none;
 
@@ -861,64 +893,59 @@ nav ul li a:hover::after{
 
 .form-group input:focus,
 .form-group textarea:focus{
-
     border-color:var(--blue-bright);
 
     box-shadow:
-        0 0 0 4px
+        0 0 0 3px
         rgba(47,111,237,0.10);
 }
 
 
 .form-group textarea{
-
-    min-height:120px;
+    min-height:100px;
 
     resize:vertical;
 }
 
 
-.submit-btn{
+/* ==========================================
+   BOTÓN ENVIAR
+   ========================================== */
 
+.submit-btn{
     background:var(--blue-bright);
 
-    color:var(--white);
+    color:white;
 
     border:none;
 
-    border-radius:16px;
+    border-radius:11px;
 
-    padding:13px 20px;
+    padding:11px 18px;
 
     font-family:'Baloo 2', sans-serif;
 
-    font-size:1.05rem;
+    font-size:1rem;
 
     font-weight:700;
 
     cursor:pointer;
 
-    box-shadow:
-        0 6px 0 var(--blue-deep);
-
     transition:
         transform .15s ease,
-        box-shadow .15s ease;
+        opacity .15s ease;
 }
 
 
 .submit-btn:hover{
+    transform:translateY(-2px);
 
-    transform:translateY(-3px);
+    opacity:.92;
 }
 
 
 .submit-btn:active{
-
-    transform:translateY(2px);
-
-    box-shadow:
-        0 2px 0 var(--blue-deep);
+    transform:translateY(1px);
 }
 
 
@@ -927,30 +954,26 @@ nav ul li a:hover::after{
    ========================================== */
 
 .whatsapp-container{
-
-    text-align:center;
-
-    margin-top:25px;
+    margin-top:18px;
 }
 
 
 .whatsapp-btn{
-
-    display:inline-flex;
+    display:flex;
 
     align-items:center;
 
     justify-content:center;
 
-    gap:10px;
+    gap:8px;
 
     background:#25D366;
 
     color:white;
 
-    padding:13px 20px;
+    padding:11px 18px;
 
-    border-radius:16px;
+    border-radius:11px;
 
     font-family:'Baloo 2', sans-serif;
 
@@ -958,27 +981,21 @@ nav ul li a:hover::after{
 
     font-weight:700;
 
-    box-shadow:
-        0 6px 0 #159447;
-
     transition:
         transform .15s ease,
-        box-shadow .15s ease;
+        opacity .15s ease;
 }
 
 
 .whatsapp-btn:hover{
+    transform:translateY(-2px);
 
-    transform:translateY(-3px);
+    opacity:.92;
 }
 
 
 .whatsapp-btn:active{
-
-    transform:translateY(2px);
-
-    box-shadow:
-        0 2px 0 #159447;
+    transform:translateY(1px);
 }
 
 
@@ -987,7 +1004,6 @@ nav ul li a:hover::after{
    ========================================== */
 
 footer{
-
     position:relative;
 
     z-index:2;
@@ -1005,13 +1021,17 @@ footer{
 
 
 /* ==========================================
-   MÓVIL
+   TABLET / MÓVIL
    ========================================== */
 
 @media (max-width:760px){
 
-    .main-grid{
+    nav ul{
+        display:none;
+    }
 
+
+    .main-grid{
         grid-template-columns:1fr;
 
         padding:
@@ -1020,20 +1040,18 @@ footer{
 
 
     .course-card{
-
         padding:
             28px 22px 25px;
     }
 
 
     .grid-box{
-
-        padding:25px 20px;
+        padding:
+            25px 20px;
     }
 
 
     .badge-new{
-
         position:relative;
 
         top:auto;
@@ -1042,20 +1060,13 @@ footer{
         margin-bottom:18px;
     }
 
-}
-
-
-@media (max-width:600px){
 
     .hero{
-
         padding-top:25px;
     }
 
 
     .hero h1{
-
         font-size:2.3rem;
     }
-
 }
