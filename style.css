@@ -1266,3 +1266,123 @@ footer{
 
     font-family:'Nunito',sans-serif;
 }
+/* ==========================================
+   PÁGINA DE CONTACTO
+   ========================================== */
+
+.contact-page {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 6% 90px;
+}
+
+
+.contact-page-head {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.contact-page-head h1 {
+    font-family: 'Baloo 2', sans-serif;
+    color: var(--blue-deep);
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 10px;
+}
+
+
+.contact-page-head p {
+    color: #39507f;
+    font-weight: 600;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+
+/* Dos tarjetas */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    align-items: stretch;
+}
+
+
+/* Tarjetas */
+
+.contact-card {
+    background: var(--white);
+    border-radius: 26px;
+    padding: 34px 30px 30px;
+
+    box-shadow:
+        0 10px 0 rgba(18,60,140,0.08),
+        0 14px 30px rgba(18,60,140,0.10);
+}
+
+
+/* Título de las tarjetas */
+
+.contact-card .section-head {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+
+.contact-card .section-head h2 {
+    font-family: 'Baloo 2', sans-serif;
+    color: var(--blue-deep);
+    font-size: 1.6rem;
+}
+
+
+.contact-card .section-head p {
+    color: #39507f;
+    font-weight: 600;
+    margin-top: 6px;
+}
+
+
+/* Calendario */
+
+.reservation-card {
+    overflow: hidden;
+}
+
+
+.calendar-frame {
+    width: 100%;
+    height: 600px;
+    border: 0;
+    border-radius: 15px;
+}
+
+
+/* Móvil */
+
+@media (max-width: 760px) {
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-page {
+        padding-top: 30px;
+    }
+
+    .calendar-frame {
+        height: 600px;
+    }
+
+}
+h3{
+
+    font-family: 'Baloo 2', sans-serif;
+    color: var(--blue-deep);
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 200px
+}
