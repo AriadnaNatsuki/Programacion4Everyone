@@ -1800,3 +1800,92 @@ h4{
 html {
     scroll-behavior: smooth;
 }
+.carousel-section {
+    width: 100%;
+    background: white;
+    padding: 60px 40px;
+}
+
+#cursosCarousel {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.carousel-inner {
+    padding: 20px 80px 50px;
+}
+
+.carousel-card {
+    max-width: 600px;
+    min-height: 280px;
+    margin: 0 auto;
+
+    padding: 35px;
+
+    background: #f8fbff;
+    border-radius: 25px;
+
+    box-shadow: 0 10px 30px rgba(30, 70, 130, 0.12);
+}
+
+.carousel-icon {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eaf2ff;
+    border-radius: 16px;
+
+    font-size: 30px;
+
+    margin-bottom: 20px;
+}
+
+.carousel-card h3 {
+    color: #19458f;
+    font-size: 24px;
+}
+
+.carousel-card p {
+    color: #526b91;
+    line-height: 1.6;
+}
+
+.carousel-tag {
+    display: inline-block;
+
+    padding: 7px 14px;
+
+    background: #e8f1ff;
+    color: #2459a6;
+
+    border-radius: 20px;
+
+    font-weight: 700;
+}
+
+@media (max-width: 700px) {
+
+    .carousel-section {
+        padding: 40px 15px;
+    }
+
+    .carousel-inner {
+        padding: 15px 45px 50px;
+    }
+
+    .carousel-card {
+        padding: 25px;
+    }
+}/* Flechas del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #19458f;
+    border-radius: 50%;
+    background-size: 50%;
+    width: 45px;
+    height: 45px;
+}
