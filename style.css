@@ -2101,3 +2101,159 @@ footer p {
     }
 
 }
+/* ==========================================
+   NEWSLETTER
+   ========================================== */
+
+.newsletter-section {
+    width: 100%;
+    background: #ffffff;
+    padding: 45px 20px 50px;
+    box-sizing: border-box;
+}
+
+.newsletter-wrapper {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.newsletter-card {
+    width: 100%;
+    background: #EFF2F7;
+    border-radius: 26px;
+    padding: 35px;
+    box-sizing: border-box;
+}
+
+
+/* ==========================================
+   BREVO - OCUPAR TODO EL ANCHO
+   ========================================== */
+
+.newsletter-card .sib-form {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+}
+
+.newsletter-card #sib-form-container {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+}
+
+.newsletter-card #sib-container,
+.newsletter-card #sib-container.sib-container--large,
+.newsletter-card #sib-container.sib-container--vertical {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+
+    background-color: rgba(180, 219, 242, 1) !important;
+
+    border: 0 !important;
+    border-radius: 18px !important;
+}
+
+/* El propio formulario */
+.newsletter-card #sib-form {
+    width: 100% !important;
+    max-width: none !important;
+}
+
+
+/* Campos */
+.newsletter-card .entry__field {
+    width: 100% !important;
+}
+
+.newsletter-card input {
+    box-sizing: border-box !important;
+    width: 100% !important;
+}
+
+
+/* Botón */
+.newsletter-card button {
+    border-radius: 8px !important;
+}
+
+
+/* ==========================================
+   MÓVIL
+   ========================================== */
+
+@media (max-width: 760px) {
+
+    .newsletter-section {
+        padding: 30px 15px 40px;
+    }
+
+    .newsletter-card {
+        padding: 15px;
+        border-radius: 22px;
+    }
+
+    .newsletter-card #sib-container {
+        border-radius: 14px !important;
+    }
+}
+/* ==========================================
+   NEWSLETTER - CONTENIDO INTERIOR
+   ========================================== */
+
+.newsletter-card #sib-form {
+    max-width: 820px !important;
+    margin: 0 auto !important;
+}
+
+/* Título */
+.newsletter-card .sib-form-block p {
+    margin: 0;
+}
+
+/* Espaciado de los bloques */
+.newsletter-card #sib-form > div {
+    padding: 10px 0 !important;
+}
+
+/* Texto descriptivo */
+.newsletter-card .sib-text-form-block p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Etiqueta */
+.newsletter-card .entry__label {
+    display: block;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+/* Campo email */
+.newsletter-card .entry__field {
+    width: 100% !important;
+}
+
+.newsletter-card .entry__field input {
+    width: 100% !important;
+    height: 48px;
+    border-radius: 8px !important;
+    font-size: 16px;
+}
+
+/* Texto de ayuda */
+.newsletter-card .entry__specification {
+    display: block;
+    margin-top: 7px;
+}
+
+/* Botón */
+.newsletter-card .sib-form-block__button {
+    padding: 13px 25px !important;
+    border-radius: 8px !important;
+    font-size: 15px !important;
+}
+    
