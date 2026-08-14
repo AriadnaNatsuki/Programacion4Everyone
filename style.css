@@ -888,7 +888,71 @@ nav ul li a:hover::after {
     font-weight: 600;
     margin: 6px 0 0;
 }
+/* ==========================================
+   TARJETAS DEL CARRUSEL STEAM
+   ========================================== */
 
+.carousel-card {
+    background: var(--white);
+    border-radius: 26px;
+    padding: 34px 30px 30px;
+    max-width: 640px;
+    margin: 0 auto;
+    box-shadow:
+        0 10px 0 rgba(18, 60, 140, 0.08),
+        0 14px 30px rgba(18, 60, 140, 0.10);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.carousel-blue { background: var(--blue-sky); }
+.carousel-yellow { background: var(--yellow-soft); }
+
+.carousel-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 18px;
+    background: var(--white);
+}
+
+.carousel-card h3 {
+    color: var(--blue-deep);
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+}
+
+.carousel-card p {
+    color: #4a5f8a;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.carousel-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.carousel-tag {
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 999px;
+    background: var(--blue-sky);
+    color: var(--blue-deep);
+    white-space: nowrap;
+}
+
+@media (max-width: 760px) {
+    .carousel-card {
+        padding: 24px 18px;
+    }
+}
 
 
 /* ==========================================
