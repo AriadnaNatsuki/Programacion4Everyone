@@ -853,6 +853,8 @@ nav ul li a:hover::after {
 
     border-radius: 26px;
 
+    border: 20px solid #FFF3CC;
+    
     min-height: 420px;
 
     padding: 30px;
