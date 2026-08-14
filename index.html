@@ -1,29 +1,50 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0C7W6955H2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-0C7W6955H2');
-</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0C7W6955H2"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-0C7W6955H2');
+    </script>
+
 
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="> Clases online de programación y experimentos científicos, máximo 4 alumnos (desde 7 a 18 años). Aprende Python, Scratch, MIT App Inventor, IA, HTML, CSS y ciencia de forma práctica, divertida y online">
-    <title>Programación para tod@s | En directo (7-18 años) | Máx 4 alumnos </title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Clases online de programación y experimentos científicos para niños y adolescentes de 7 a 18 años. Máximo 4 alumnos. Aprende Python, Scratch, MIT App Inventor, IA, HTML, CSS y ciencia de forma práctica, divertida y online."
+    >
+
+    <title>
+        Programación para tod@s | En directo (7-18 años) | Máx 4 alumnos
+    </title>
 
 
     <!-- Google Fonts -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
 
     <link
         href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap"
@@ -31,107 +52,130 @@
     >
 
 
-    <!-- CSS -->
+    <!-- Bootstrap CSS -->
 
-    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+
+    <!-- CSS propio -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./img/favicon.ico">
 
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-    rel="stylesheet"
+        rel="shortcut icon"
+        href="./img/favicon.ico"
     >
-    <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
-    <!--GOOGLE SCHEMA SEO-->
-<!--GOOGLE SCHEMA SEO-->
+
+
+    <!-- Brevo CSS -->
+
+    <link
+        rel="stylesheet"
+        href="https://sibforms.com/forms/end-form/build/sib-styles.css"
+    >
+
+
+    <!-- GOOGLE SCHEMA SEO -->
+
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "EducationalOrganization",
-  "name": "Programación para tod@s",
-  "url": "https://programacionparatodos.es/",
-  "logo": "https://programacionparatodos.es/img/logo.png",
-  "description": "Cursos online en directo de programación y experimentos científicos para niños y adolescentes de 7 a 18 años. También ofrecemos cursos de Inteligencia Artificial y herramientas digitales para adultos.",
-  "sameAs": [
-    "https://www.facebook.com/Programacion4Everyone",
-    "https://www.instagram.com/TU_PAGINA"
-  ],
-  "hasCourse": [
     {
-      "@type": "Course",
-      "name": "Cursos de Programación",
-      "description": "Aprende a crear tus propios juegos, apps y proyectos mientras aprendes a programar paso a paso. Incluye Scratch, Python y desarrollo web.",
-      "provider": {
+        "@context": "https://schema.org",
         "@type": "EducationalOrganization",
-        "name": "Programación para tod@s"
-      },
-      "educationalLevel": "7-18 años",
-      "courseMode": "online",
-      "isAccessibleForFree": false,
-      "offers": {
-        "@type": "Offer",
-        "category": "Free trial",
-        "price": "0",
-        "priceCurrency": "EUR",
-        "description": "Primera clase de prueba gratuita, sin compromiso"
-      }
-    },
-    {
-      "@type": "Course",
-      "name": "Cursos de Experimentos Científicos",
-      "description": "Descubre la ciencia con experimentos prácticos, retos y proyectos sorprendentes en física y química.",
-      "provider": {
-        "@type": "EducationalOrganization",
-        "name": "Programación para tod@s"
-      },
-      "educationalLevel": "7-18 años",
-      "courseMode": "online",
-      "isAccessibleForFree": false,
-      "offers": {
-        "@type": "Offer",
-        "category": "Free trial",
-        "price": "0",
-        "priceCurrency": "EUR",
-        "description": "Primera clase de prueba gratuita, sin compromiso"
-      }
+        "name": "Programación para tod@s",
+        "url": "https://programacionparatodos.es/",
+        "logo": "https://programacionparatodos.es/img/logo.png",
+        "description": "Cursos online en directo de programación y experimentos científicos para niños y adolescentes de 7 a 18 años.",
+        "sameAs": [
+            "https://www.facebook.com/Programacion4Everyone",
+            "https://www.instagram.com/TU_PAGINA"
+        ],
+        "hasCourse": [
+            {
+                "@type": "Course",
+                "name": "Cursos de Programación",
+                "description": "Aprende a crear tus propios juegos, apps y proyectos mientras aprendes a programar paso a paso. Incluye Scratch, Python y desarrollo web.",
+                "provider": {
+                    "@type": "EducationalOrganization",
+                    "name": "Programación para tod@s"
+                },
+                "educationalLevel": "7-18 años",
+                "courseMode": "online",
+                "isAccessibleForFree": false,
+                "offers": {
+                    "@type": "Offer",
+                    "category": "Free trial",
+                    "price": "0",
+                    "priceCurrency": "EUR",
+                    "description": "Primera clase de prueba gratuita, sin compromiso"
+                }
+            },
+            {
+                "@type": "Course",
+                "name": "Cursos de Experimentos Científicos",
+                "description": "Descubre la ciencia con experimentos prácticos, retos y proyectos sorprendentes en física y química.",
+                "provider": {
+                    "@type": "EducationalOrganization",
+                    "name": "Programación para tod@s"
+                },
+                "educationalLevel": "7-18 años",
+                "courseMode": "online",
+                "isAccessibleForFree": false,
+                "offers": {
+                    "@type": "Offer",
+                    "category": "Free trial",
+                    "price": "0",
+                    "priceCurrency": "EUR",
+                    "description": "Primera clase de prueba gratuita, sin compromiso"
+                }
+            }
+        ]
     }
-  ]
-}
     </script>
+
 </head>
 
 
 <body>
-  <div id="fb-root"></div>
 
-<script async defer crossorigin="anonymous"
-    src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v23.0">
-</script>
-  
+
+    <!-- FACEBOOK -->
+
+    <div id="fb-root"></div>
+
+    <script
+        async
+        defer
+        crossorigin="anonymous"
+        src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v23.0">
+    </script>
 
 
     <!-- ==========================================
          FONDO DECORATIVO
          ========================================== -->
 
-    <div class="bg-shapes" aria-hidden="true">
+    <div
+        class="bg-shapes"
+        aria-hidden="true"
+    >
 
         <span>&lt;/&gt;</span>
-
         <span>⚛️</span>
-
         <span>🚀</span>
-
         <span>{ }</span>
-
         <span>🧪</span>
-
         <span>✨</span>
 
     </div>
-
 
 
     <!-- ==========================================
@@ -139,7 +183,6 @@
          ========================================== -->
 
     <div id="header"></div>
-
 
 
     <!-- ==========================================
@@ -173,12 +216,10 @@
 
 
         <p>
-
             Cursos pensados para que niños, niñas y
             adolescentes de 7 a 18 años exploren
             el mundo de la programación y la ciencia
             jugando, creando y experimentando.
-
         </p>
 
 
@@ -204,7 +245,6 @@
     </section>
 
 
-
     <!-- ==========================================
          SECCIÓN DE CURSOS
          ========================================== -->
@@ -217,35 +257,28 @@
         <div class="courses-grid">
 
 
-            <!-- ======================================
-                 CURSO PROGRAMACIÓN
-                 ====================================== -->
+            <!-- CURSO PROGRAMACIÓN -->
 
             <div class="course-card card-blue">
 
                 <div class="glow"></div>
 
-
                 <span class="badge-new badge-free">
                     🎁 ¡Prueba gratis!
                 </span>
-
 
                 <div class="course-icon">
                     &lt;/&gt;
                 </div>
 
-
                 <h3>
                     Cursos de Programación
                 </h3>
-
 
                 <p>
                     Crea tus propios juegos, apps y proyectos
                     mientras aprendes a programar paso a paso.
                 </p>
-
 
                 <div class="tag-row">
 
@@ -263,50 +296,39 @@
 
                 </div>
 
-
                 <a
                     href="cursos_programacion.html"
                     class="card-link"
                 >
                     Ver cursos
-                    <span class="arrow">
-                        →
-                    </span>
+                    <span class="arrow">→</span>
                 </a>
 
             </div>
 
 
-
-            <!-- ======================================
-                 CURSO EXPERIMENTOS
-                 ====================================== -->
+            <!-- CURSO EXPERIMENTOS -->
 
             <div class="course-card card-yellow">
 
                 <div class="glow"></div>
 
-
                 <span class="badge-new">
                     ✨ ¡Novedad!
                 </span>
-
 
                 <div class="course-icon">
                     🧪
                 </div>
 
-
                 <h3>
                     Cursos de Experimentos Científicos
                 </h3>
-
 
                 <p>
                     Descubre la ciencia con experimentos
                     prácticos, retos y proyectos sorprendentes.
                 </p>
-
 
                 <div class="tag-row">
 
@@ -320,288 +342,336 @@
 
                 </div>
 
-
                 <a
                     href="cursos.html"
                     class="card-link"
                 >
                     Ver cursos
-                    <span class="arrow">
-                        →
-                    </span>
+                    <span class="arrow">→</span>
                 </a>
 
             </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==========================================
+         CARRUSEL STEAM
+         ========================================== -->
+
+    <section class="carousel-section">
+
+
+        <!-- TÍTULO -->
+
+        <div class="section-head">
+
+            <div class="section-head-content">
+
+                <h2>
+                    🚀 Metodología STEAM
+                </h2>
+
+                <p>
+                    Aprender, experimentar y crear
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARRUSEL -->
+
+        <div
+            id="cursosCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+            data-bs-interval="4000"
+        >
+
+
+            <!-- INDICADORES -->
+
+            <div class="carousel-indicators">
+
+                <button
+                    type="button"
+                    data-bs-target="#cursosCarousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                ></button>
+
+                <button
+                    type="button"
+                    data-bs-target="#cursosCarousel"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                ></button>
+
+                <button
+                    type="button"
+                    data-bs-target="#cursosCarousel"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                ></button>
+
+            </div>
+
+
+            <!-- CONTENIDO -->
+
+            <div class="carousel-inner">
+
+
+                <!-- SLIDE 1 -->
+
+                <div class="carousel-item active">
+
+                    <div class="carousel-card carousel-blue">
+
+                        <div class="carousel-icon">
+                            🧠
+                        </div>
+
+                        <h3>
+                            Refuerza lo aprendido en el colegio
+                        </h3>
+
+                        <p>
+                            La programación y los experimentos científicos
+                            permiten llevar los conceptos de matemáticas,
+                            física, ciencias y otras materias a situaciones
+                            prácticas y fáciles de comprender.
+                        </p>
+
+                        <div class="carousel-tags">
+
+                            <span class="carousel-tag">
+                                Programación
+                            </span>
+
+                            <span class="carousel-tag">
+                                Robótica
+                            </span>
+
+                            <span class="carousel-tag">
+                                Matemáticas
+                            </span>
+
+                            <span class="carousel-tag">
+                                Física
+                            </span>
+
+                            <span class="carousel-tag">
+                                Química
+                            </span>
+
+                            <span class="carousel-tag">
+                                Tecnología
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SLIDE 2 -->
+
+                <div class="carousel-item">
+
+                    <div class="carousel-card carousel-yellow">
+
+                        <div class="carousel-icon">
+                            🔢
+                        </div>
+
+                        <h3>
+                            Desarrolla el razonamiento lógico
+                        </h3>
+
+                        <p>
+                            Programar implica ordenar ideas, reconocer
+                            patrones, plantear estrategias y resolver
+                            problemas paso a paso, fortaleciendo el
+                            pensamiento lógico y matemático.
+                        </p>
+
+                        <div class="carousel-tags">
+
+                            <span class="carousel-tag">
+                                Matemáticas
+                            </span>
+
+                            <span class="carousel-tag">
+                                Resolución de problemas
+                            </span>
+
+                            <span class="carousel-tag">
+                                Organizar ideas
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SLIDE 3 -->
+
+                <div class="carousel-item">
+
+                    <div class="carousel-card carousel-blue">
+
+                        <div class="carousel-icon">
+                            🎮
+                        </div>
+
+                        <h3>
+                            Aprende jugando y creando
+                        </h3>
+
+                        <p>
+                            Cuando los niños crean sus propios juegos,
+                            programas o experimentos, aprender deja de
+                            ser memorizar y se convierte en una experiencia
+                            práctica, divertida y motivadora.
+                        </p>
+
+                        <div class="carousel-tags">
+
+                            <span class="carousel-tag">
+                                Scratch
+                            </span>
+
+                            <span class="carousel-tag">
+                                Páginas web
+                            </span>
+
+                            <span class="carousel-tag">
+                                Python
+                            </span>
+
+                            <span class="carousel-tag">
+                                MIT App Inventor
+                            </span>
+
+                            <span class="carousel-tag">
+                                Inteligencia Artificial
+                            </span>
+
+                            <span class="carousel-tag">
+                                Experimentos de ciencias
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- BOTÓN ANTERIOR -->
+
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#cursosCarousel"
+                data-bs-slide="prev"
+            >
+
+                <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                ></span>
+
+                <span class="visually-hidden">
+                    Anterior
+                </span>
+
+            </button>
+
+
+            <!-- BOTÓN SIGUIENTE -->
+
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#cursosCarousel"
+                data-bs-slide="next"
+            >
+
+                <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                ></span>
+
+                <span class="visually-hidden">
+                    Siguiente
+                </span>
+
+            </button>
 
 
         </div>
 
     </section>
-<section class="carousel-section">
-
-    <div class="section-head">
-    <div class="section-head-content">
-        <h2>🚀 Metodología STEAM</h2>
-        <p>Aprender, experimentar y crear</p>
-    </div>
-</div>
-
-
-    <div
-        id="cursosCarousel"
-        class="carousel slide"
-        data-bs-ride="carousel"
-        data-bs-interval="4000"
-
-    >
-
-        <!-- INDICADORES -->
-
-        <div class="carousel-indicators">
-
-            <button
-                type="button"
-                data-bs-target="#cursosCarousel"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1">
-            </button>
-
-            <button
-                type="button"
-                data-bs-target="#cursosCarousel"
-                data-bs-slide-to="1"
-                aria-label="Slide 2">
-            </button>
-
-        </div>
-
-
-        <!-- CONTENIDO DEL CARRUSEL -->
-
-        <div class="carousel-inner">
-
-
-            <!-- SLIDE 1 -->
-
-            <div class="carousel-item active">
-
-                <div class="carousel-card carousel-blue">
-
-                    <div class="carousel-icon">
-                        🧠 
-                    </div>
-
-                    <h3>
-                        Refuerza lo aprendido en el colegio
-                    </h3>
-
-                    <p>
-                        La programación y los experimentos científicos permiten llevar los conceptos de matemáticas, física, ciencias y otras materias a situaciones prácticas y fáciles de comprender.
-                    </p>
-                    <div class="carousel-tags">
-
-                      <span class="carousel-tag">
-                          Programación
-                      </span>
-                      <span class="carousel-tag">
-                          Robótica
-                      </span>
-                      <span class="carousel-tag">
-                          Matemáticas
-                      </span>
-                      <span class="carousel-tag">
-                          Física
-                      </span>
-                      <span class="carousel-tag">
-                          Química
-                      </span>
-                      <span class="carousel-tag">
-                          Tecnología
-                      </span>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <!-- SLIDE 2 -->
-
-            <div class="carousel-item">
-
-                <div class="carousel-card carousel-yellow">
-
-                    <div class="carousel-icon">
-                        🔢
-                    </div>
-
-                    <h3>
-                         Desarrolla el razonamiento lógico
-                    </h3>
-
-                    <p>
-                        Programar implica ordenar ideas, reconocer patrones, plantear estrategias y resolver problemas paso a paso, fortaleciendo el pensamiento lógico y matemático.
-                    </p>
-
-                    <span class="carousel-tag">
-                        Matemáticas
-                    </span>
-                    <span class="carousel-tag">
-                        Resolución de problemas
-                    </span>
-                    <span class="carousel-tag">
-                        Organizar ideas
-                    </span>
-
-                </div>
-
-            </div>
-
-             <!-- SLIDE 3 -->
-
-            <div class="carousel-item">
-
-                <div class="carousel-card carousel-blue">
-
-                    <div class="carousel-icon">
-                        🎮 
-                    </div>
-
-                    <h3>
-                        Aprende jugando y creando
-                    </h3>
-
-                    <p>
-                      Cuando los niños crean sus propios juegos, programas o experimentos, aprender deja de ser memorizar y se convierte en una experiencia práctica, divertida y motivadora.                    </p>
-                    <div class="carousel-tags">
-                      <span class="carousel-tag">
-                          Scratch
-                      </span>
-                      <span class="carousel-tag">
-                          Páginas webs
-                      </span>
-                      <span class="carousel-tag">
-                          Python
-                      </span>
-                      <span class="carousel-tag">
-                          MIT App Inventor
-                      </span>
-                      <span class="carousel-tag">
-                          Inteligencia Artifical
-                      </span>
-                      <span class="carousel-tag">
-                          Experimentos de ciencias
-                      </span>
-                  </div>
-
-                </div>
-
-            </div>
-
-
-
-        </div>
-          
-
-
-        <!-- BOTÓN ANTERIOR -->
-
-        <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#cursosCarousel"
-            data-bs-slide="prev"
-        >
-
-            <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true">
-            </span>
-
-            <span class="visually-hidden">
-                Anterior
-            </span>
-
-        </button>
-
-
-        <!-- BOTÓN SIGUIENTE -->
-
-        <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#cursosCarousel"
-            data-bs-slide="next"
-        >
-
-            <span
-                class="carousel-control-next-icon"
-                aria-hidden="true">
-            </span>
-
-            <span class="visually-hidden">
-                Siguiente
-            </span>
-
-        </button>
-
-    </div>
-
-</section>
 
 
     <!-- ==========================================
-         SEGUNDA FILA:
-         OPINIONES + LOS ALUMNOS OPINAN
+         OPINIONES
          ========================================== -->
 
     <section class="reviews-section">
-      
 
         <div class="reviews-grid">
-            <!-- ======================================
-                 LOS ALUMNOS OPINAN
-                 ====================================== -->
+
+
+            <!-- LOS ALUMNOS OPINAN -->
 
             <div class="grid-box students-opinion">
 
                 <div class="student-opinion-content">
 
-
                     <div class="student-opinion-icon">
                         💬
                     </div>
 
-
                     <h2>
                         Los alumnos opinan
                     </h2>
-
 
                     <p>
                         Descubre qué piensan los alumnos y sus
                         familias después de aprender conmigo.
                     </p>
 
-
                     <div class="stars">
                         ⭐ ⭐ ⭐ ⭐ ⭐
                     </div>
-
 
                 </div>
 
             </div>
 
-            <!-- ======================================
-                 OPINIONES
-                 ====================================== -->
+
+            <!-- OPINIONES -->
 
             <div
                 class="grid-box"
                 id="opiniones"
-                
+            >
+
                 <!-- TusClasesParticulares Reviews -->
 
                 <script>
@@ -652,155 +722,247 @@
                     </a>
 
                 </div>
-            >
-
-            
-
-
-
 
             </div>
 
 
-
-          
-
-
         </div>
-   
+
     </section>
-    <!-- BOLETÍN -->
-<section class="newsletter-section">
 
-    <div class="newsletter-wrapper">
 
-        <div class="newsletter-card">
+    <!-- ==========================================
+         NEWSLETTER
+         ========================================== -->
 
-            <div class="sib-form">
-                <div id="sib-form-container" class="sib-form-container">
+    <section class="newsletter-section">
 
-                    <div id="error-message" class="sib-form-message-panel"
-                        style="font-family:Helvetica,sans-serif;font-size:16px;text-align:left;color:#661d1d;background-color:#ffeded;border-color:#ff4949;border-radius:3px;max-width:540px;">
-                        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
-                            <span class="sib-form-message-panel__inner-text">
-                                No hemos podido validar tu suscripción.
-                            </span>
-                        </div>
-                    </div>
+        <div class="newsletter-wrapper">
 
-                    <div id="success-message" class="sib-form-message-panel"
-                        style="font-family:Helvetica,sans-serif;font-size:16px;text-align:left;color:#085229;background-color:#e7faf0;border-color:#13ce66;border-radius:3px;max-width:540px;">
-                        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
-                            <span class="sib-form-message-panel__inner-text">
-                                Se ha realizado tu suscripción.
-                            </span>
-                        </div>
-                    </div>
+            <div class="newsletter-card">
 
-                    <div id="sib-container"
-                        class="sib-container--large sib-container--vertical">
+                <div class="sib-form">
 
-                        <form id="sib-form"
-                            method="POST"
-                            action="https://79832197.sibforms.com/serve/MUIFALpW4g20jTiw2cpXCm5zShIx9C0v-XNUVb7hBBXlgJ3vbCiNVZdtn-Wzwf8XmPbk7wYOj1zSLbl2qzJwR2hALUWSyGi89ZPSOyTjli0wGQJ5USnVOJDttr05fpVKKXCKsZo28stSZ4jiUYmqBVZ3i1L8rCf8UKnSsQWwVQyelN_19nZGE6jUYGHEQ2D556RCV3z_DrHDP_4hnw=="
-                            data-type="subscription">
+                    <div
+                        id="sib-form-container"
+                        class="sib-form-container"
+                    >
 
-                            <div style="padding: 8px 0;">
-                                <div class="sib-form-block"
-                                    style="font-family:Helvetica,sans-serif;font-size:32px;font-weight:700;text-align:left;color:#3C4858;background-color:transparent;">
-                                    <p> ✉️ Newsletter</p>
-                                </div>
+
+                        <!-- ERROR -->
+
+                        <div
+                            id="error-message"
+                            class="sib-form-message-panel"
+                            style="font-family:Helvetica,sans-serif;font-size:16px;text-align:left;color:#661d1d;background-color:#ffeded;border-color:#ff4949;border-radius:3px;max-width:540px;"
+                        >
+
+                            <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+
+                                <span class="sib-form-message-panel__inner-text">
+                                    No hemos podido validar tu suscripción.
+                                </span>
+
                             </div>
 
-                            <div style="padding: 8px 0;">
-                                <div class="sib-form-block"
-                                    style="font-family:Helvetica,sans-serif;font-size:16px;text-align:left;color:#3C4858;background-color:transparent;">
-                                    <div class="sib-text-form-block">
+                        </div>
+
+
+                        <!-- ÉXITO -->
+
+                        <div
+                            id="success-message"
+                            class="sib-form-message-panel"
+                            style="font-family:Helvetica,sans-serif;font-size:16px;text-align:left;color:#085229;background-color:#e7faf0;border-color:#13ce66;border-radius:3px;max-width:540px;"
+                        >
+
+                            <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+
+                                <span class="sib-form-message-panel__inner-text">
+                                    Se ha realizado tu suscripción.
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- CONTENEDOR FORMULARIO -->
+
+                        <div
+                            id="sib-container"
+                            class="sib-container--large sib-container--vertical"
+                        >
+
+                            <form
+                                id="sib-form"
+                                method="POST"
+                                action="https://79832197.sibforms.com/serve/MUIFALpW4g20jTiw2cpXCm5zShIx9C0v-XNUVb7hBBXlgJ3vbCiNVZdtn-Wzwf8XmPbk7wYOj1zSLbl2qzJwR2hALUWSyGi89ZPSOyTjli0wGQJ5USnVOJDttr05fpVKKXCKsZo28stSZ4jiUYmqBVZ3i1L8rCf8UKnSsQWwVQyelN_19nZGE6jUYGHEQ2D556RCV3z_DrHDP_4hnw=="
+                                data-type="subscription"
+                            >
+
+
+                                <!-- TÍTULO -->
+
+                                <div style="padding: 8px 0;">
+
+                                    <div
+                                        class="sib-form-block"
+                                        style="font-family:Helvetica,sans-serif;font-size:32px;font-weight:700;text-align:left;color:#3C4858;background-color:transparent;"
+                                    >
+
                                         <p>
-                                            Suscríbete a nuestra newsletter para recibir nuestras novedades.
+                                            ✉️ Newsletter
                                         </p>
+
                                     </div>
+
                                 </div>
-                            </div>
 
-                            <div style="padding: 8px 0;">
-                                <div class="sib-input sib-form-block">
-                                    <div class="form__entry entry_block">
 
-                                        <div class="form__label-row">
+                                <!-- TEXTO -->
 
-                                            <label class="entry__label"
-                                                style="font-weight:700;text-align:left;font-family:Helvetica,sans-serif;font-size:16px;color:#3c4858;"
-                                                for="EMAIL"
-                                                data-required="*">
-                                                Introduce tu dirección de e-mail para suscribirte
-                                            </label>
+                                <div style="padding: 8px 0;">
 
-                                            <div class="entry__field">
-                                                <input
-                                                    class="input"
-                                                    type="text"
-                                                    id="EMAIL"
-                                                    name="EMAIL"
-                                                    autocomplete="off"
-                                                    placeholder="EMAIL"
-                                                    data-required="true"
-                                                    required>
-                                            </div>
+                                    <div
+                                        class="sib-form-block"
+                                        style="font-family:Helvetica,sans-serif;font-size:16px;text-align:left;color:#3C4858;background-color:transparent;"
+                                    >
+
+                                        <div class="sib-text-form-block">
+
+                                            <p>
+                                                Suscríbete a nuestra newsletter
+                                                para recibir nuestras novedades.
+                                            </p>
 
                                         </div>
 
-                                        <label class="entry__error entry__error--primary"></label>
+                                    </div>
 
-                                        <label class="entry__specification"
-                                            style="font-family:Helvetica,sans-serif;font-size:12px;text-align:left;color:#8390A4;">
-                                            Introduce tu dirección de e-mail para suscribirte.
-                                            Ej.: abc@xyz.com
-                                        </label>
+                                </div>
+
+
+                                <!-- EMAIL -->
+
+                                <div style="padding: 8px 0;">
+
+                                    <div class="sib-input sib-form-block">
+
+                                        <div class="form__entry entry_block">
+
+                                            <div class="form__label-row">
+
+                                                <label
+                                                    class="entry__label"
+                                                    style="font-weight:700;text-align:left;font-family:Helvetica,sans-serif;font-size:16px;color:#3c4858;"
+                                                    for="EMAIL"
+                                                    data-required="*"
+                                                >
+                                                    Introduce tu dirección de e-mail para suscribirte
+                                                </label>
+
+
+                                                <div class="entry__field">
+
+                                                    <input
+                                                        class="input"
+                                                        type="text"
+                                                        id="EMAIL"
+                                                        name="EMAIL"
+                                                        autocomplete="off"
+                                                        placeholder="EMAIL"
+                                                        data-required="true"
+                                                        required
+                                                    >
+
+                                                </div>
+
+                                            </div>
+
+
+                                            <label class="entry__error entry__error--primary"></label>
+
+
+                                            <label
+                                                class="entry__specification"
+                                                style="font-family:Helvetica,sans-serif;font-size:12px;text-align:left;color:#8390A4;"
+                                            >
+                                                Introduce tu dirección de e-mail para suscribirte.
+                                                Ej.: abc@xyz.com
+                                            </label>
+
+                                        </div>
 
                                     </div>
-                                </div>
-                            </div>
-
-                            <div style="padding: 8px 0;">
-                                <div class="sib-form-block" style="text-align:left">
-
-                                    <button
-                                        class="sib-form-block__button sib-form-block__button-with-loader"
-                                        style="font-family:Helvetica,sans-serif;font-size:16px;font-weight:700;color:#FFFFFF;background-color:#edc814;border-width:0;border-radius:8px;"
-                                        form="sib-form"
-                                        type="submit">
-
-                                        <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon"
-                                            viewBox="0 0 512 512">
-                                            <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z"/>
-                                        </svg>
-
-                                        SUSCRIBIRSE
-                                    </button>
 
                                 </div>
-                            </div>
 
-                            <input type="text"
-                                name="email_address_check"
-                                value=""
-                                class="input--hidden">
 
-                            <input type="hidden"
-                                name="locale"
-                                value="es">
+                                <!-- BOTÓN -->
 
-                        </form>
+                                <div style="padding: 8px 0;">
+
+                                    <div
+                                        class="sib-form-block"
+                                        style="text-align:left"
+                                    >
+
+                                        <button
+                                            class="sib-form-block__button sib-form-block__button-with-loader"
+                                            style="font-family:Helvetica,sans-serif;font-size:16px;font-weight:700;color:#FFFFFF;background-color:#edc814;border-width:0;border-radius:8px;"
+                                            form="sib-form"
+                                            type="submit"
+                                        >
+
+                                            <svg
+                                                class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon"
+                                                viewBox="0 0 512 512"
+                                            >
+
+                                                <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z"/>
+
+                                            </svg>
+
+                                            SUSCRIBIRSE
+
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- CAMPOS OCULTOS -->
+
+                                <input
+                                    type="text"
+                                    name="email_address_check"
+                                    value=""
+                                    class="input--hidden"
+                                >
+
+                                <input
+                                    type="hidden"
+                                    name="locale"
+                                    value="es"
+                                >
+
+                            </form>
+
+                        </div>
+
                     </div>
+
                 </div>
+
             </div>
 
         </div>
 
-    </div>
+    </section>
 
-</section>
+
     <!-- ==========================================
          POPUP CLASE DE PRUEBA
          ========================================== -->
@@ -868,7 +1030,6 @@
     </div>
 
 
-
     <!-- ==========================================
          FOOTER
          ========================================== -->
@@ -881,45 +1042,72 @@
     </footer>
 
 
-
     <!-- ==========================================
-         JAVASCRIPT DEL POPUP, DEL CARROUSEL, DEL HEADER Y NEWSLETTER BREVO FORMULARIO
+         JAVASCRIPT
          ========================================== -->
 
     <script src="popup.js"></script>
+
     <script src="header.js"></script>
+
+
+    <!-- Bootstrap JS -->
+
     <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
     </script>
+
+
+    <!-- Brevo -->
+
     <script>
-    window.REQUIRED_CODE_ERROR_MESSAGE = 'Elige un código de país';
-    window.LOCALE = 'es';
 
-    window.EMAIL_INVALID_MESSAGE =
-        "La información que has proporcionado no es válida. Compruebe el formato del campo e inténtalo de nuevo.";
+        window.REQUIRED_CODE_ERROR_MESSAGE =
+            'Elige un código de país';
 
-    window.REQUIRED_ERROR_MESSAGE =
-        "Este campo no puede quedarse vacío.";
+        window.LOCALE = 'es';
 
-    window.GENERIC_INVALID_MESSAGE =
-        "La información que has proporcionado no es válida. Compruebe el formato del campo e inténtalo de nuevo.";
+        window.EMAIL_INVALID_MESSAGE =
+            "La información que has proporcionado no es válida. Compruebe el formato del campo e inténtalo de nuevo.";
 
-    window.translation = {
-        common: {
-            selectedList: '{quantity} lista seleccionada',
-            selectedLists: '{quantity} listas seleccionadas',
-            selectedOption: '{quantity} seleccionado',
-            selectedOptions: '{quantity} seleccionados',
-        }
-    };
+        window.REQUIRED_ERROR_MESSAGE =
+            "Este campo no puede quedarse vacío.";
 
-    var AUTOHIDE = Boolean(0);
-</script>
+        window.GENERIC_INVALID_MESSAGE =
+            "La información que has proporcionado no es válida. Compruebe el formato del campo e inténtalo de nuevo.";
 
-<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+        window.translation = {
 
+            common: {
+
+                selectedList:
+                    '{quantity} lista seleccionada',
+
+                selectedLists:
+                    '{quantity} listas seleccionadas',
+
+                selectedOption:
+                    '{quantity} seleccionado',
+
+                selectedOptions:
+                    '{quantity} seleccionados'
+
+            }
+
+        };
+
+        var AUTOHIDE = Boolean(0);
+
+    </script>
+
+
+    <script
+        defer
+        src="https://sibforms.com/forms/end-form/build/main.js">
+    </script>
 
 
 </body>
 
 </html>
+```
