@@ -1734,6 +1734,9 @@ footer{
         0 10px 0 rgba(18,60,140,0.08),
         0 14px 30px rgba(18,60,140,0.10);
 }
+.message-card{
+    background-color: #FFF3CC;
+}
 
 
 /* Título de las tarjetas */
@@ -1762,6 +1765,7 @@ footer{
 
 .reservation-card {
     overflow: hidden;
+    border: 20px solid #FFF3CC;
 }
 
 
