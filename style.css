@@ -2283,4 +2283,9 @@ footer p {
     border-radius: 8px !important;
     font-size: 15px !important;
 }
-    
+/* ==========================================
+   CURSOS PROGRAMACION
+   ========================================== */
+#cursos_programacion{
+    background-color:  #EAF2FF;
+}
